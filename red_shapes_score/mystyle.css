@@ -5,45 +5,103 @@ html{
 
 
 
+.bar{
+width:500px;
+height: 100px;
+  top:300px;
+  left:0;
+  /* background-color: blue; */
+  position: fixed;
+}
+
+.square0{
+  left: 10px;
+  top:330px;
+  width: 50px;
+font-size: 20px;
+  position: fixed;
+  text-align: center;
+  font-style: italic;
+}
+
+.square1{
+  left: 200px;
+  top:340px;
+  width: 50px;
+font-size: 20px;
+  position: fixed;
+  text-align: center;
+  font-style: italic;
+
+}
+
+.square2{
+  left: 500px;
+  top:330px;
+  width: 50px;
+font-size: 20px;
+  position: fixed;
+  text-align: center;
+  font-style: italic;
+    z-index: 1;
+}
+
+.square3{
+  left: 650px;
+  top:330px;
+  width: 100px;
+font-size: 20px;
+  position: fixed;
+  text-align: center;
+  font-style: italic;
+    z-index: 1;
+}
+
+.square4{
+  left: 720px;
+  top:200px;
+width: 300px;
+font-size: 20px;
+  position: fixed;
+  text-align: center;
+  font-style: italic;
+    z-index: 1;
+}
+
+
+
 .sticky {
   width: 420px;
   position: fixed;
-  top: 20;
+  top: 300px;
   left: 100;
 
 }
 
+.square{
+  top:300px;
+  right:840px;
+  height: 90px;
+  width: 90px;
+  border-color: #ff0000 ;
+border-top: 1px dotted #ff0000;
+border-bottom: 1px dotted #ffb2b2;
+border-right: 1px dotted #ffb2b2;
+border-left: 1px dotted #ff0000;
 
-.grid{
-  width: 500px;
-  height: 700px;
   position: fixed;
-  top:0;
-  left:22px;
-  background-image: url("study_redshapes.png");
-}
-
-.square0 {
-  height: 200px;
-  width: 200px;
-  background-image: linear-gradient(90deg,#ff0000,#ffb2b2);
-  top:0;
-  right: 0;
-  position: absolute;
-  z-index: 0;
-  opacity: 0.7;
 }
 
 
 .dot {
-  height: 150px;
-  width: 150px;
+  height: 100px;
+  width: 100px;
   background-image: linear-gradient(-90deg, #ff0000,#ffb2b2);
   border-radius: 50%;
-  top:150px;
+  top:0;
   right: -50px;
   position: absolute;
-  z-index: 1;
+  opacity: 0.7;
   box-shadow: 1px 1px 2px white, 0 0 50px white, 0 0 25px #ffb2b2;
   animation: jiggle 6s linear infinite;
 
@@ -70,60 +128,12 @@ html{
 }
 
 
-
-.square {
-  height: 200px;
-  width: 200px;
-  background-image: linear-gradient(90deg,#ff0000,#ffb2b2);
-  top:230px;
-  right:0;
-  position: absolute;
-
-  z-index: 2;
-
-}
-
-.square2 {
-  height: 200px;
-  width: 200px;
-  background-image: linear-gradient(90deg,#ff0000,#ffb2b2);
-  top:0;
-  left:0;
-  position: absolute;
-  opacity: 0.7;
-  z-index: 2;
-
-}
-.square3 {
-  height: 200px;
-  width: 200px;
-  background-image: linear-gradient(90deg,#ff0000,#ffb2b2);
-  top:230px;
-  left:0;
-  position: absolute;
-opacity: 0.7;
-  z-index: 2;
-
-}
-
-.rectangle4 {
-  height: 120px;
-  width: 200px;
-  background-image: linear-gradient(90deg,#ff0000,#ffb2b2);
-  top:460px;
-  left:0;
-  position: absolute;
-opacity: 0.7;
-  z-index: 2;
-
-}
-
 .dot2 {
-  height: 150px;
-  width: 150px;
+  height: 100px;
+  width: 100px;
   background-image: linear-gradient(-90deg, #ff0000,#ffb2b2);
   border-radius: 50%;
-  top:510px;
+  top:0;
   left:40px;
   position: absolute;
   z-index: 3;
@@ -153,11 +163,11 @@ opacity: 0.7;
 
 
 .dot3 {
-  height: 150px;
-  width: 150px;
+  height: 100px;
+  width: 100px;
   background-image: linear-gradient(-90deg, #ff0000,#ffb2b2);
   border-radius: 50%;
-  top:150px;
+  top:0;
   right: -230px;
   position: absolute;
   z-index: 1;
@@ -189,11 +199,11 @@ opacity: 0.7;
 
 
 .dot4 {
-  height: 150px;
-  width: 150px;
+  height: 100px;
+  width: 100px;
   background-image: linear-gradient(-90deg, #ff0000,#ffb2b2);
   border-radius: 50%;
-  top:400px;
+  top:0;
   right: -400px;
   position: absolute;
   z-index: 1;
@@ -207,7 +217,7 @@ opacity: 0.7;
   width: 280px;
   height: 60px;
   position: fixed;
-  bottom: 10px;
+  top: 320px;
   right: 0;
   /* background-image: linear-gradient(-90deg, #ff0000,#ffb2b2); */
   z-index:0;
@@ -259,17 +269,5 @@ opacity: 0.7;
   right:200px;
   position: absolute;
   z-index: 1;
-
-}
-
-.text{
-  bottom:25px;
-  right:300px;
-  text-align: center;
-  color: #ffb2b2;
-  font-size: 20px;
-  font: sans-serif;
-  width: 250px;
-  position: fixed;
 
 }
